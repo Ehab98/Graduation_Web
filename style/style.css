@@ -1,0 +1,195 @@
+.navbar{
+    background-color: #fff;
+    height: 100px;
+    margin: 20px;
+    border-radius: 16px;
+    
+  
+}
+.navbar-brand{
+    width: 90px;
+    cursor: pointer;
+    
+}
+
+
+.contact-button{
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.5s background-color;
+}
+.contact-button:hover{
+    background-color: #00b383;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+
+}
+.navbar-toggler:focus .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+
+}
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover .nav-link.active{
+    color: #000;
+
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover:before, .nav-link.active:before{
+    width: 100%;
+    visibility: visible;
+}
+.hero-section{
+    background: url(/images/hero.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    
+
+}
+.hero-section::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.hero-section .container{
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    z-index: 1;
+    position: relative;
+}
+.hero-section h1{
+    font-size: 1.5em;
+
+}
+.hero-section h2{
+    font-size: 1.3em;
+}
+.hero-section h2 span{
+    color: #009970;
+}
+
+
+
+.offcanvas-header img{
+    width: 80px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+
+/* ------------about--------------------- */
+.about .about-items{
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.about-items{
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.about-items::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    right: -100%;
+    transition: 0.5s;
+    z-index: -1; 
+    transform: skewX(180deg);
+}
+.about-items:hover.about-items::after{
+    background: linear-gradient(75.7deg, rgb(34, 126, 34) 3.8%, rgb(99, 162, 17) 87.1%);
+    color:#000;
+    left: 0;
+    transform: skewX(0);
+}
+.about-items:hover{
+    transform: translateY(-15px);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
